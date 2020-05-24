@@ -1,5 +1,0 @@
-boto3
-troposphere
-nose
-mock
-argparse
