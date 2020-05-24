@@ -1,0 +1,35 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+  VPC:
+    DeletionPolicy: Retain
+    Properties:
+      CidrBlock: 10.100.0.0/16
+      EnableDnsHostnames: 'true'
+      EnableDnsSupport: 'true'
+      Tags:
+        - Key: Application
+          Value: !Ref 'AWS::StackName'
+        - Key: Name
+          Value: alagu-test-vpc
+        - Key: Network
+          Value: '{0} Spot Instance VPC'
+    Type: AWS::EC2::VPC
+  dev:
+    DeletionPolicy: Retain
+    Properties:
+      ImageId: ami-00768769
+      InstanceType: t1.micro
+    Type: AWS::EC2::Instance
+  production:
+    DeletionPolicy: Retain
+    Properties:
+      ImageId: ami-00768769
+      InstanceType: t1.micro
+    Type: AWS::EC2::Instance
+  staging:
+    DeletionPolicy: Retain
+    Properties:
+      ImageId: ami-00768769
+      InstanceType: t1.micro
+    Type: AWS::EC2::Instance
+

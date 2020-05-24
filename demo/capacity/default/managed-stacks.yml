@@ -1,0 +1,39 @@
+development:
+  - home-service
+  - department-service
+  - search-service
+  - gallery-service
+  - car-service
+  - checkout-service
+
+integration-1:
+  - home-service
+  - department-service
+  - search-service
+  - gallery-service
+  - car-service
+  - checkout-service
+
+integration-2:
+  - home-service
+  - department-service
+  - search-service
+  - gallery-service
+  - car-service
+  - checkout-service
+
+prod-1:
+  - home-service
+  - department-service
+  - search-service
+  - gallery-service
+  - car-service
+  - checkout-service
+
+prod-2:
+  - home-service
+  - department-service
+  - search-service
+  - gallery-service
+  - car-service
+  - checkout-service

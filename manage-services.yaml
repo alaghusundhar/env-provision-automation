@@ -1,0 +1,20 @@
+test-1:
+  - browse
+  - search
+  - home
+  - checkout
+  - cart
+
+test-2:
+  - browse
+  - search
+  - home
+  - checkout
+  - cart
+
+production:
+  - browse
+  - search
+  - home
+  - checkout
+  - cart
